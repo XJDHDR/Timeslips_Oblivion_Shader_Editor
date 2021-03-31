@@ -76,7 +76,7 @@ namespace ShaderEdit
         shader.name = "";
         shader.name2 = chArray;
         for (int index2 = 0; index2 < 100 && chArray[index2] != char.MinValue; ++index2)
-          shader.name += (string) (object) chArray[index2];
+          shader.name += (string) (object) chArray[index2].ToString();
         int count = binaryReader.ReadInt32();
         shader.data = binaryReader.ReadBytes(count);
         this.shaders.Add(shader);
